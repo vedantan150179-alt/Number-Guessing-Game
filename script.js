@@ -1,5 +1,5 @@
 let randomNum = Math.floor(Math.random() * 100) + 1;
-let attempts = 5;
+let attempts = 10;
 
 let countDisplay = document.getElementById("result");
 let attemptsDisplay = document.getElementById("attempts");
@@ -19,10 +19,10 @@ checkBtn.addEventListener("click", function () {
     if (userGuess === randomNum) {
         countDisplay.innerText = "Correct!";
         checkBtn.disabled = true;
-    } 
+    }
     else if (userGuess > randomNum) {
         countDisplay.innerText = "Too high";
-    } 
+    }
     else {
         countDisplay.innerText = "Too low";
     }
