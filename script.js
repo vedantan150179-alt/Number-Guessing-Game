@@ -6,6 +6,8 @@ let attemptsDisplay = document.getElementById("attempts");
 
 let checkBtn = document.getElementById("check");
 let resetBtn = document.getElementById("reset");
+let win_sound= document.getElementById("win_sound");
+let lose_sound = document.getElementById("lose_sound")
 
 checkBtn.addEventListener("click", function () {
 
@@ -14,11 +16,14 @@ checkBtn.addEventListener("click", function () {
     if (attempts <= 0) {
         countDisplay.innerText = "Game Over!";
         return;
+        lose_sound.play();
     }
 
     if (userGuess === randomNum) {
         countDisplay.innerText = "Correct!";
+        
         checkBtn.disabled = true;
+        win_sound.play();
     }
     else if (userGuess > randomNum) {
         countDisplay.innerText = "Too high";
