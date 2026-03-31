@@ -43,12 +43,12 @@ checkBtn.addEventListener("click", function () {
 });
 
 resetBtn.addEventListener("click", function () {
-    randomNum = Math.floor(Math.random() * 10) + 1;
-    attempts = 5;
+    randomNum = Math.floor(Math.random() * 100) + 1;
+    attempts = 10;
 
     document.getElementById("guess").value = "";
     countDisplay.innerText = "";
-    attemptsDisplay.innerText = "Attempts left: 5";
+    attemptsDisplay.innerText = "Attempts left: 10";
 
     checkBtn.disabled = false;
 });
