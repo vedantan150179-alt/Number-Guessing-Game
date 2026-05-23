@@ -20,3 +20,11 @@ body {
     background-position: center;  /* center image */
     background-repeat: no-repeat; /* no repeating */
 }
+@media(max-width : 600px){
+    .card{
+        width: 90%;
+    }
+    input{
+        width: 70%;
+    }
+}
